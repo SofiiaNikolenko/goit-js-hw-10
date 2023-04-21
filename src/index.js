@@ -19,7 +19,7 @@ function searchCountry(evt) {
 
     const name = evt.target.value.trim();
 
-    fetchCountries(name).then(getCountries);
+    fetchCountries(name).then(getCountries).catch(errorMessage);
 }
 
 function getCountries(country) {
